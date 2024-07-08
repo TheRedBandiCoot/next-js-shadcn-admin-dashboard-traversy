@@ -45,7 +45,7 @@ export default function PostPage({
   const handleSubmit = (data: z.infer<typeof formSchema>) => {
     toast({
       title: 'Post has been updated Successfully',
-      description: `Updated by ${post?.author} on ${post?.date}`
+      description: `Updated by ${data.author} on ${data?.date}`
     });
   };
 
